@@ -2,198 +2,408 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon.png">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>AgnesFeng's Blog</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/gaia.css" rel="stylesheet"/>
 
-    <title>Girls Coding Day's Blog</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <!--     Fonts and icons     -->
+    <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+        <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+        <div class="container">
+            <div class="navbar-header">
+                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
                     <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
+                    <span class="icon-bar bar1"></span>
+                    <span class="icon-bar bar2"></span>
+                    <span class="icon-bar bar3"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="#1">
+                    To the top
+                </a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-uppercase">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="http://www.creative-tim.com/product/gaia-bootstrap-template-pro" target="_blank">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#gaia" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-share-alt"></i> Share
+                        </a>
+                        <ul class="dropdown-menu dropdown-danger">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook-square"></i> Github</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i> E-mail</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram"></i> WeChat</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="post.html">Sample Post</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="http://www.creative-tim.com/product/gaia-bootstrap-template" class="btn btn-danger btn-fill">Contact Me</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <h1>Clean Blog</h1>
-                        <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+
+    <div id="1" class=" wrap section section-header">
+        <div class="parallax filter filter-color-red">
+            <div class="image"
+                style="background-image: url('assets/img/back_top.jpg')">
+                <!--   -->
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="title-area">
+                        <h1 class="title-modern">AgnesFeng</h1>
+                        <!-- <h3> </h2>-->
+                        <div class="separator line-separator">♦</div>
+                    </div>
+
+                    <div class="button-get-started">
+                        <a href="#2" class="btn btn-white btn-fill btn-lg scrolly">
+                            Know More
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Man must explore, and this is exploration at its greatest
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Problems look mighty small from 150 miles up
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Science has not yet mastered prophecy
-                        </h2>
-                        <h3 class="post-subtitle">
-                            We predict too much for the next year and yet far too little for the next ten.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</p>
-                </div>
-                <hr>
-                <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            Failure is not an option
-                        </h2>
-                        <h3 class="post-subtitle">
-                            Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2014</p>
-                </div>
-                <hr>
-                <!-- Pager -->
-                <ul class="pager">
-                    <li class="next">
-                        <a href="#">Older Posts &rarr;</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
 
-    <hr>
 
-    <!-- Footer -->
-    <footer>
+    <div id="2" class="wrap section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                <div class="title-area">
+                    <h2>Personal Interest</h2>
+                    <div class="separator separator-danger">✻</div>
+                    <p class="description"> I am passionate about everything I do in life. It comes from staying alert and alive and involved in the lives of the people that I love and the people in the wider world who need my help.</p>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <!--i class="pe-7s-music"></i-->
+                            <img alt="..." width="280" height="200" class="img-circle" src="assets/img/violin2.jpg"/>
+                        </div>
+                        <h3>Music</h3>
+                        <p class="description">I'd like to play the violin in my spare time. I like singing too.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <!--i class="pe-7s-note2"></i-->
+                            <img alt="..." width="280" height="200" class="img-circle" src="assets/img/bike2.jpg"/>
+                        </div>
+                        <h3>Riding</h3>
+                        <p class="description">I realized only how much when some clueless physiotherapist tried to forbid me to run.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-icon">
+                        <div class="icon text-danger">
+                            <!--i class="pe-7s-graph1"></i-->
+                            <img alt="..." width="280" height="200" class="img-circle" src="assets/img/dog2.jpg"/>
+                        </div>
+                        <h3>Animals</h3>
+                        <p class="description">But the loving bonds we share with pets are real, and so are the feelings of loss and grief when they die.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section section-our-team-freebie">
+        <div class="parallax filter filter-color-black">
+            <div class="image" style="background-image:url('assets/img/green.jpg')">
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="title-area">
+                            <h2>Places Having Travled</h2>
+                            <div class="separator separator-danger">✻</div>
+                            <p class="description">It’s because that is one aspect of travel that I love, just feeling the difference in a new place until it becomes commonplace, if I stay long enough for that to happen.</p>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content"                 
+                                            >
+                                                <div class="avatar avatar-danger">
+                                                    <img alt="..." class="img-circle" src="assets/img/faces/1.JPG"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Me</h3>
+                                                    <p class="small-text">CEO / Co-Founder</p>
+                                                    <p class="description">I miss the old Kanye I gotta say at that time I’d like to meet Kanye And I promise the power is in the people and I will use the power given by the people to bring everything I have back to the people.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-danger">
+                                                    <img  alt="..." class="img-circle" src="assets/img/faces/2.JPG"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Me</h3>
+                                                    <p class="small-text">Product Designer</p>
+                                                    <p class="description">I miss the old Kanye I gotta say at that time I’d like to meet Kanye And I promise the power is in the people and I will use the power given by the people to bring everything I have back to the people.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card card-member">
+                                            <div class="content">
+                                                <div class="avatar avatar-danger">
+                                                    <img alt="..." class="img-circle" src="assets/img/faces/3.JPG"/>
+                                                </div>
+                                                <div class="description">
+                                                    <h3 class="title">Me</h3>
+                                                    <p class="small-text">Marketing Hacker</p>
+                                                    <p class="description">I miss the old Kanye I gotta say at that time I’d like to meet Kanye And I promise the power is in the people and I will use the power given by the people to bring everything I have back to the people.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section section-our-clients-freebie">
+        <div class="container">
+            <div class="title-area">
+                <h5 class="subtitle text-gray">Here are some of</h5>
+                <h2>My Favorite Food</h2>
+                <div class="separator separator-danger">∎</div>
+            </div>
+
+            <ul class="nav nav-text" role="tablist">
+                <li class="active">
+                    <a href="#testimonial1" role="tab" data-toggle="tab">
+                        <div class="image-clients">
+                            <img alt="..." class="img-circle" src="assets/img/faces/durian.jpg"/>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonial2" role="tab" data-toggle="tab">
+                        <div class="image-clients">
+                            <img alt="..." class="img-circle" src="assets/img/faces/dessert.jpg"/>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonial3" role="tab" data-toggle="tab">
+                        <div class="image-clients">
+                            <img alt="..." class="img-circle" src="assets/img/faces/nuts.jpg"/>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="testimonial1">
+                    <p class="description">
+                        Durians have pungent smell, but durian lovers say it is the king of fruits. They are aphrodisiacs.'The smell must come out from the durian, ' said Mr Chang Peik Seng, owner of the Bao Sheng durian farm in Penang, as he emphasized the 'must'. 
+                    </p>
+                </div>
+                <div class="tab-pane" id="testimonial2">
+                    <p class="description">Grab a piece of cake and stay quiet after that?Think of it as a holiday, go hangout with friends, watch a movie, visit your favorite eat joint, spend time at the library, do whatever it takes to put yourself at ease. 
+                    </p>
+                </div>
+                <div class="tab-pane" id="testimonial3">
+                    <p class="description"> This means peanuts, hazelnuts, cashews, almonds, walnuts, pecans, pumpkin seeds, sunflower seeds, and any other type of nut or seed you can think of, are good for your brain.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="section section-small section-get-started">
+        <div class="parallax filter">
+            <div class="image"
+                style="background-image: url('assets/img/office-1.jpeg')">
+            </div>
+            <div class="container">
+                <div class="title-area">
+                    <h2 class="text-white">Do you want to work with me?</h2>
+                    <div class="separator line-separator">♦</div>
+                    <p class="description"> We are keen on creating a second skin for anyone with a sense of style! We design our clothes having our customers in mind and we never disappoint!</p>
+                </div>
+
+                <div class="button-get-started">
+                    <a href="#gaia" class="btn btn-danger btn-fill btn-lg">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer footer-big footer-color-black" data-color="black">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                    <div class="info">
+                        <h5 class="title">Company</h5>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a></li>
+                                <li>
+                                    <a href="#">Find offers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Discover Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-3">
+                    <div class="info">
+                        <h5 class="title"> Help and Support</h5>
+                         <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">How it works</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#">Company Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Money Back</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="info">
+                        <h5 class="title">Latest News</h5>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i> <b>Get Shit Done</b> The best kit in the market is here, just give it a try and let us...
+                                        <hr class="hr-small">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter"></i> We've just been featured on <b> Awwwards Website</b>! Thank you everybody for...
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
+                    <div class="info">
+                        <h5 class="title">Follow us on</h5>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#" class="btn btn-social btn-facebook btn-simple">
+                                        <i class="fa fa-facebook-square"></i> Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-social btn-dribbble btn-simple">
+                                        <i class="fa fa-dribbble"></i> Dribbble
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-social btn-twitter btn-simple">
+                                        <i class="fa fa-twitter"></i> Twitter
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-social btn-reddit btn-simple">
+                                        <i class="fa fa-google-plus-square"></i> Google+
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                 © <script> document.write(new Date().getFullYear()) </script> Creative Tim, made with love
             </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
-
 </body>
+
+<!--   core js files    -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+
+<!--  js library for devices recognition -->
+<script type="text/javascript" src="assets/js/modernizr.js"></script>
+
+<!--  script for google maps   -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
+<script type="text/javascript" src="assets/js/gaia.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrolly.js"></script>>
+<script type="text/javascript" src="assets/js/my.js"></script>
 
 </html>
